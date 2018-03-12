@@ -1,0 +1,12 @@
+management.security.enabled: false
+spring.cloud.config.server.git:
+  uri: git@bitbucket.org:ggnanasekaran77/{application}.git
+  force-pull: true
+  search-path: 
+  - config*
+  repos:
+    helloworld:
+      uri: git@bitbucket.org:ggnanasekaran77/{application}.git
+      search-paths:
+      - config*
+
